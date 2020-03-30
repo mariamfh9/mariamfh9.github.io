@@ -1,11 +1,11 @@
 # Site settings
 author: Mariam Haider
-title: 
+title: Silicon Valley Software
 header-img: img/home-bg.png
 email: mfh.haider@gmail.com
 copyright_name: Mariam Haider
 description: > # this means to ignore newlines until "baseurl:"
-  
+  My Journey to Software!
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  mariamfh9
