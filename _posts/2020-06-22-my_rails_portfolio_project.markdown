@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "My Rails Portfolio Project"
-date:       2020-06-22 20:36:33 +0000
+date:       2020-06-22 16:36:34 -0400
 permalink:  my_rails_portfolio_project
 ---
 
 
-The Rails Portfolio Project was definitely one of the most difficult thus far. I started off by trying to build it up myself, using the ```rails new``` command. This quickly generated the framework I needed to develop my project. I thought I was on a role! However, I ran into some issues when I started creating my Log In page. We had to create the app so that the user can log in with their email and password, or log in from an external source such as Github or Facebook. I realized I needed to use Omniauth for this. 
+The Rails Portfolio Project was definitely one of the most difficult thus far. I started off by trying to build it up myself, using the ```rails new``` command. This quickly generated the framework I needed to develop my project. I thought I was on a role! However, I ran into some issues when I started creating my Log In page. We had to create the app so that the user could log in with their email and password, or log in from an external source such as Github or Facebook. I realized I needed to use Omniauth for this. 
 
 I quickly realized that the best way to go about this was using Devise. Devise is definitely the gem of 'gems' as I like to put it! By putting ```'gem devise'```  in my Gemfile and running ```bundle install```, following a few more steps, I was able to get my log in page up and running. My User model was automatically generated, along with all it's corresponding views. All I needed was to add a registrations controller to allow the user to Sign Up for an account and the lines:
 
@@ -16,7 +16,7 @@ I quickly realized that the best way to go about this was using Devise. Devise i
         
 ```
 
-in my user model. As soon as I started up the server, I had a log in page up and running. The next step was to add the gem ```'omniauth-github' ``` into my Gemfile. This allowed for the user to Log in, Sign up, or Log in with their Github account. Then the usual ```bundle install``` and adding 
+in my user model. As soon as I started up the server, I had a log in page up and running. The next step was to add the gem ```'omniauth-github' ``` into my Gemfile. This allowed for the user to Log in, Sign up, or Log Out with their Github account. Then the usual ```bundle install``` and adding 
 ```
  def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
