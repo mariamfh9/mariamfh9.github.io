@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Binding.pry: A Life Saver!"
-date:       2020-08-28 16:09:34 +0000
+date:       2020-08-28 12:09:35 -0400
 permalink:  binding_pry_a_life_saver
 ---
 
@@ -29,7 +29,7 @@ def create
 
 As you can see, I have inserted `binding.pry` after each line of code. Now when I start the server and run my program, the user will input their information on the form here: 
 
-![](https://ibb.co/TwBWxTz)
+![](https://photos.app.goo.gl/YKn4JYGz1Qe5ykQe6)
 
 As soon as I submitted the form I hit my pry, and was able to use the console to figure out what my code was outputting or which lines were working. When the user adds a new party, the issue was that they were not being saved. I was able to figure out what was wrong all thanks to this trick! 
 
